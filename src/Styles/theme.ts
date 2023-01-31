@@ -5,7 +5,7 @@ export const theme = extendTheme({
     "bg-1": "#F2E2DF",
     "bg-2": "#F7E9E4",
     "bg-red": "#A66D6D",
-    "font-color-green": "#014023",
+    "font-color-green": "#0c420c",
     "fontColor-secundary": "#003400",
   },
 });

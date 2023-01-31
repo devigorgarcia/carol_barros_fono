@@ -1,17 +1,19 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import bgImage from "../../assets/background.png";
+import { AboutMe } from "../../Components/AboutMe";
 import { Header } from "../../Components/Header";
-
 
 export const HomePage = () => {
   return (
-    <Box
+    <Flex
+      flexDir={"column"}
       backgroundImage={bgImage}
       backgroundPosition={"center"}
       backgroundSize="cover"
-      h='100vh'
+      gap="2rem"
     >
       <Header />
-    </Box>
+      <AboutMe />
+    </Flex>
   );
 };
