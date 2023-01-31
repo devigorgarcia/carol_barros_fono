@@ -1,6 +1,7 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import bgImage from "../../assets/background.png";
 import { AboutMe } from "../../Components/AboutMe";
+import { Ebook } from "../../Components/Ebook";
 import { Header } from "../../Components/Header";
 
 export const HomePage = () => {
@@ -14,6 +15,7 @@ export const HomePage = () => {
     >
       <Header />
       <AboutMe />
+      <Ebook />
     </Flex>
   );
 };

@@ -7,6 +7,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Carol from "../../assets/carolLogo.png";
+import { TagTitle } from "../Tag";
 
 export const AboutMe = () => {
   return (
@@ -17,29 +18,10 @@ export const AboutMe = () => {
       p="2rem 0"
       gap="2rem"
     >
-      <Flex justify={"flex-start"}>
-        <Heading
-          bg="#e2c9b4"
-          border="1px solid #e9c8ad"
-          borderTopRightRadius={"40px"}
-          borderBottomRightRadius={"40px"}
-          p="0.2rem 2rem"
-          textAlign={"right"}
-          fontFamily={"Roboto, sans-serif"}
-          fontWeight="900"
-          size="lg"
-          w="300px"
-          letterSpacing={"1image.pngpx"}
-          color={"fontColor-secundary"}
-          textTransform="uppercase"
-        >
-          Quem Sou
-        </Heading>
-      </Flex>
       <Flex
         align={{ base: "center", lg: " flex-start" }}
-        flexDir={{ base: "column", lg: "row" }}
-        p={{base: '2rem 0', lg: '3rem 0'}}
+        flexDir={{ base: "column", lg: "row-reverse" }}
+        p={{ base: "2rem 0", lg: "3rem 0" }}
         gap="3rem"
         w="100%"
       >
@@ -47,7 +29,8 @@ export const AboutMe = () => {
         <Container maxW="5xl">
           <VStack fontFamily="Montserrat" alignItems={"flex-start"}>
             <Text>
-              Pra quem não sabe, meu nome é Ana Carolina e tenho 27 anos!
+              Pra quem não sabe, meu nome é <strong>Ana Carolina</strong> e
+              tenho 27 anos!
             </Text>
             <Text>
               Fonodiologa Formada pela USP Ribeirão Preto. Especialista em
